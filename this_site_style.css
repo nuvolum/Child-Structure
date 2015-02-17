@@ -1,0 +1,43 @@
+/* ------------------------------------
+:: Misc 
+------------------------------------ */
+.blue-lite.button a, .blue-lite.button a:visited , .blue.button a, .blue.button a:visited{ background-color: #2abaa1 !important; } /* Change color CTA button */
+.button a {padding: 10px 15px !important;}
+.home #breadcrumbs {display: none;}
+.gallery-wrap .title h3, .mediawrap .title h3, .gallery-wrap .title h2, .mediawrap .title h2, .excerpt-content h2 {font-size: 14px;}/*  make font smaller in homepage popup text */
+.lowfooterright {display: none !important;} /* Remove powered by Terso from site */
+
+.widget_nav_menu li {background: none !important;} /* Remove lines in sidebar around links */
+
+.page-template-youtube_landing_page-php .intro-text , 
+.page-template-testimonial_landing_page-php .intro-text  {background-color: RGBA(249, 249, 249, .5)  !important; text-align: center;} /* Change header style on procedure page */
+
+/**Fix Accordion**/
+.page-id-266 .accordionwidth {max-width: 663px;}
+
+/**Fix Sub Menu**/
+#nv_selectmenu {visibility: hidden;margin-bottom: -50px;} /**hide phone navigation in desktop**/
+
+/**Gravity form customizations**/
+/* Form next button placement desktop */
+.gform_next_button   {float: right; }
+.gform_previous_button {float: left; }
+
+
+
+/* Mobile */
+@media only screen and (max-width:1010px) { 
+/**Hide presentation button**/
+.page-id-238 #primary-wrapper .button-wrap.aligncenter {display: none !important;}
+.page-id-24 #primary-wrapper .button-wrap.aligncenter {display: none !important;}
+.page-id-31 #primary-wrapper .button-wrap.aligncenter {display: none !important;}
+/**Accordion fix**/
+.page-id-266 .accordionwidth {max-width: 363px;}
+.upbutton{margin-top:0px !important;}
+.emptyhide{display: none !important;}
+/* next button placement desktop */
+input#gform_next_button_9_87 {
+margin-left: 0px;
+margin-top: 0px;
+}/* End Mobile */
+
