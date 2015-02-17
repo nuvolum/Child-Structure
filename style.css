@@ -21,6 +21,7 @@ Tags: dark, light, white, black, gray, one-column, two-columns, left-sidebar, ri
 3. Youtube Stuff
 4. Page Specific
 5. Forms
+6. Mobile
 --------------------------------------- 
 */
 
@@ -43,6 +44,14 @@ Tags: dark, light, white, black, gray, one-column, two-columns, left-sidebar, ri
 .centertxt {
   text-align:center!important;
 }
+
+.wrapper{margin-top:-18px;} /* remove top line on every page */
+
+#primary-wrapper .skinset-header.nv-skin, #primary-wrapper .skinset-footer.nv-skin, #primary-wrapper .skinset-main.nv-skin {border-bottom: 5px solid transparent !important;} /* Remove odd Lines that show up in terso */
+
+/* About The Phone Numbers At The Top */
+.phoney{margin-left:800px;margin-top:21px;font-size:22px;color:#007668;}
+.hidey{visibility:hidden;}
 
 
 /* ------------------------------------
@@ -93,14 +102,15 @@ h3 { font-weight: 400; line-height: 1; font-size: 20px; position: relative; marg
 
 embed { margin-top: -28px; display: block;}
 
-.page-template-testimonial_landing_page-php .row, .row .row, 
+/*
 .page-template-testimonial_landing_page-php .block.columns, .hozbreak, 
 .page-template-testimonial_landing_page-php hr, 
 .page-template-testimonial_landing_page-php .tooltip-info, 
 .page-template-testimonial_landing_page-php .container.none, 
 .page-template-testimonial_landing_page-php .gallery-wrap.group-slider, 
 .page-template-testimonial_landing_page-php .gallery-wrap.none, 
-.page-template-testimonial_landing_page-php .revslider-container { width: 100% !important;} /* Fix sizing on mobile - remove extra space on right */
+.page-template-testimonial_landing_page-php .revslider-container { width: 100%;}
+*/ /* Fix sizing on mobile - remove extra space on right */
 
 /* ------------------------------------
 :: 4. Page Specific
@@ -121,29 +131,19 @@ display: -moz-inline-stack;
 display: inline-block;
 zoom: 1;}
 
-
 /* ------------------------------------
-:: Some Styles From David
+:: 5. Mobile
 ------------------------------------ */
-/* Mobile */
 @media only screen and (max-width:1010px) { 
+.widget_nav_menu {display:none !important;} /* Hide the nav when in mobile mode */
+h1{font-size:16px !important;} /* Makes title not wrap on mobile */
 
-.hidey{visibility:visible !important;}
-.up-on-mobile{margin-top:-22px !important;} 
-.sidebar {display:none !important;}
-.uppy{margin-top:-50px;}
-.uppy2{margin-top:0px;}
-h1{font-size:12px !important;}
-#text-2 {margin-top: -90px;}
+/* About The Phone Numbers At The Top */
+.hidey{visibility:visible !important;} /* Hides for mobile click number */
 .phoney{display:none;}
-.phoney2{color: #7a7a7a; font-size: 22px;text-align: center !important; display:block;padding-top:40px;}
+.phoney2{color: #7a7a7a; font-size: 22px;text-align: center !important; display:block;padding-top:3px;}
 .phoney3{color: #7a7a7a; font-size: 22px;text-align: center !important; display:block;margin-top:-6px;margin-bottom:6px;}
-#nv_selectmenu {visibility: visible !important;} /**display phone navigation**/
 
-/* Procedures Pages */
-.waypoint {display: none;}
-.three img { width: 100%; }
-.hidebutton{display:none;}
 
 /* This code fixed the bug between Terso and Slide Set Manager that makes the mobile display look off */
 .gallery-wrap .container, .mediawrap .container {left: 0% !important;}
@@ -155,21 +155,3 @@ h1{font-size:12px !important;}
 #breadcrumbs {display: none;} /* Remove breadcrubs from all mobile pages */
 
 }/* End Mobile */
-
-/* Desktop */
-.uppy2{margin-top:-35px;}
-.wrapper{margin-top:-18px;}
-#primary-wrapper .skinset-header.nv-skin, #primary-wrapper .skinset-footer.nv-skin, #primary-wrapper .skinset-main.nv-skin {border-bottom: 5px solid transparent !important;}
-.phoney{margin-left:800px;margin-top:21px;font-size:22px;color:#007668;}
-.hidey{visibility:hidden;}
-.denty{margin-left:30px;width:80%;}
-.list.arrow.green-lite {padding-left: 55px;}
-.comments-wrap {display: none;}
-.category-title {display: none;}
-.category-list {display: none;}
-.comments-title {display: none;}
-.comments-list {display: none;}
-
-
-
-.buttonwidth{width:400px;font-size:22px;}

@@ -11,6 +11,7 @@
         <param name="movie" value="http://www.youtube.com/v/<?php the_field('youtube_link'); ?>?color2=FBE9EC&amp;rel=0&amp;hd=1&amp;version=3&amp;modestbranding=1" />
         <param name="allowFullScreen" value="true" />
         <param name="allowscriptaccess" value="always" />
+        <param name="wmode" value="transparent">
         <embed src="http://www.youtube.com/v/<?php the_field('youtube_link'); ?>?hd=1&rel=0&autohide=1&showinfo=0" type="application/x-shockwave-flash" wmode="transparent" width="425" height="250" >
         </object>
                                 </div>

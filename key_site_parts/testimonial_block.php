@@ -21,7 +21,7 @@
                                     ”
                                 </div>
 
-                                <p class="cite-auth">-Diane, Refers Dental Patients</p>
+                                <p class="cite-auth">-<?php the_field('testimonial_name'); ?></p>
                             </header>
                         </div>
                     </div>
