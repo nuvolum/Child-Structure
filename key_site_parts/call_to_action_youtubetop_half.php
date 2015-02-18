@@ -24,7 +24,7 @@
         </div>
     </div>
 
-    <div class="columns three sidebarcta wpb_column vc_column_container">
+    <div class="columns three  wpb_column vc_column_container">
         <div class="wpb_wrapper">
             <div class="wpb_text_column wpb_content_element">
                 <div class="wpb_wrapper">

@@ -11,7 +11,7 @@
 
 <p><a href="/an-overview-of-all-the-testimonials">Watch more testimonials</a> and see more examples of how we are helping people.</p>
 
-<p>If you just want to just ask a few questions give us a call. You can find all the ways to <a href="/contact-us-indianapolis">contact us here</a>. We look forward to hearing from you</p>
+<p>If you just want to just ask a few questions give us a call. You can find all the ways to <a href="/contact-us-today">contact us here</a>. We look forward to hearing from you</p>
 
 
 

@@ -41,7 +41,7 @@
 
             <div class="vc_wp_custommenu wpb_content_element">
                 <div class="widget widget_nav_menu">
-                    <?php wp_nav_menu( array('menu' => 'Patient Reviews' )); ?>
+                    <?php wp_nav_menu( array('menu' => 'Patient Stories' )); ?>
                 </div>
             </div>
         </div>
