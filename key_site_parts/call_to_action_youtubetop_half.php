@@ -1,5 +1,5 @@
-<!-- Temp Fix -->
-<div style="margin-left:15px;">
+
+<div class="columns">
 <?php if ( function_exists('yoast_breadcrumb') ) {
 		yoast_breadcrumb('<p id="breadcrumbs">','</p>');
 		} ?>

@@ -1,7 +1,7 @@
 @import "../Terso/style.css";
 @import "../Terso-Child/this_site_style.css";
 /* 
-Theme Name:  Indianapolis Oral Surgery
+Theme Name:  Oral Surgery Specialistsof Atlanta
 Theme URI: http://www.NUVOLUM.com/
 Author: themeva
 Version: 1.0
@@ -53,6 +53,9 @@ Tags: dark, light, white, black, gray, one-column, two-columns, left-sidebar, ri
 
 /* Hide Breadcrumb on homepage */
 .home #breadcrumbs {display: none;}
+
+/* Makes Headers Better */
+.intro-text {background-color: RGBA(249, 249, 249, .5) !important; text-align: center;}
 
 /* ------------------------------------
 :: 3. Quote 

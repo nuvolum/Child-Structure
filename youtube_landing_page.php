@@ -20,7 +20,7 @@ if(get_field('youtube_link'))
 ?>
 <br class="styledbox">
 
-    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>           
+    <article id="post-<?php the_ID(); ?> youtubelanding" <?php post_class(); ?>>           
 
         <?php 
 		
@@ -31,18 +31,25 @@ if(get_field('youtube_link'))
 				include(NV_FILES .'/inc/classes/post-title-class.php'); // Style Post Titles
 			echo '</header><!-- / .post-titles -->';
 		} ?>
+		
+         
+        <section class="entry columns eight layout_four">  
+           
+        <?php
+    	// TO SHOW THE PAGE CONTENTS
+    	while ( have_posts() ) : the_post(); ?> <!--Because the_content() works only inside a WP Loop -->
+        <div class="entry-content-page">
+        	<?php the_content(); ?> <!-- Page Content -->
+        </div><!-- .entry-content-page -->
 
-        <section class="entry columns eight layout_four">
-            <?php 
-			global $more;
-			$more = 0;
-			
-			the_content( __('<p class="serif">Read the rest of this page &raquo;</p>') ); ?>
-                    
-            <?php wp_link_pages(array('before' => '<ul class="paging"><li class="pages">'.__('Pages', 'themeva' ).':</li> ', 'after' => '</ul>','link_before'=> '<li class="pagebutton">',  'next_or_number' => 'number', 'link_after'=> '</li>',)); ?>
+		<?php
+  		endwhile; //resetting the page loop
+   		wp_reset_query(); //resetting the page query
+   		?>
+           
+           
             <div class="clear"></div>
-        </section><!-- /entry -->  
-
+        </section><!-- /entry --> 
         <?php get_sidebar(); ?>
 
         <footer class="row">
@@ -51,11 +58,6 @@ if(get_field('youtube_link'))
                 <?php if( of_get_option('pagecomments')=='enable' ) comments_template(); // Enable this line for comments on pages ?> 
 			</section>
         </footer>
-        
-       
-        
     </article>
-    
-    
-            	
+        
 <?php get_footer(); ?>

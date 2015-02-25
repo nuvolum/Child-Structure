@@ -1,6 +1,6 @@
 <div class="hozbreak clearfix">&nbsp;</div>
 <div class="vc_row wpb_row vc_inner row ">
-	<div class="columns  wpb_column ">
+	<div class="columns five  wpb_column ">
 		<div class="wpb_wrapper">
 			<div class="button-wrap full  medium-text "><div class="blue-lite button full"><a href="/request-an-appointment" target="_self">Schedule Consultation</a></div></div>
 		</div> 
