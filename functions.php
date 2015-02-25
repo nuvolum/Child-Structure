@@ -47,6 +47,7 @@ $labels[$label] = $labels[$label] + 1;
      
 }add_action('gform_after_submission_1', 'remove_form_entry', 10, 2); 
 
+
 /* ------------------------------------
 :: Custom Widget
 ------------------------------------ */
@@ -74,11 +75,11 @@ $title = apply_filters( 'widget_title', $instance['title'] );
 echo $args['before_widget'];
 
 // This is where you run the code and display the output
-if ( $field = get_field('testimonial_sidebar_video') ) {
-get_template_part('key_site_parts/call_to_action_procedures');
+if ( $field = get_field('youtube_link') ) {
+//Do nothing - This keeps testimonal CTA From Loading
 } else
 	{
-//Do something else
+get_template_part('key_site_parts/call_to_action_procedures');
 }
 
 

@@ -1,5 +1,12 @@
+<!-- Temp Fix -->
+<div style="margin-left:15px;">
+<?php if ( function_exists('yoast_breadcrumb') ) {
+		yoast_breadcrumb('<p id="breadcrumbs">','</p>');
+		} ?>
+</div>
+
 <div class="vc_row wpb_row  twelve ">
-    <div class="columns nine wpb_column vc_column_container">
+    <div class="columns eight layout_four">
         <div class="wpb_wrapper">
             <div class="wpb_text_column wpb_content_element">
                 <div class="wpb_wrapper">
@@ -24,7 +31,7 @@
         </div>
     </div>
 
-    <div class="columns three  wpb_column vc_column_container">
+    <div class="sidebar columns side_one four layout_four  border right last">
         <div class="wpb_wrapper">
             <div class="wpb_text_column wpb_content_element">
                 <div class="wpb_wrapper">

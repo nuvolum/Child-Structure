@@ -32,7 +32,7 @@
 
     <div class="columns three wpb_column vc_column_container">
         <div class="wpb_wrapper">
-            <div class="wpb_text_column wpb_content_element">
+            <div class="wpb_text_column wpb_content_element testimonialblock_menu">
                 <div class="wpb_wrapper">
                 	<div class="hozbreak clearfix">&nbsp;</div>
                     <h2>Other Procedures</h2>
@@ -60,6 +60,8 @@
             	<div class="hozbreak clearfix">&nbsp;</div>
             </div>
         </div>
+       <!-- Display the related videos only they we have one selected -->
+       <?php if(get_field('related_image_1')) { ?>
 
         <div class="vc_row wpb_row vc_inner row ">
             <div class="columns four wpb_column vc_column_container">
@@ -136,7 +138,9 @@
                     </div>
                 </div>
             </div>
-            
+          <?php } else { ?>
+   			<!-- do nothing  -->
+          <?php }; ?>
         </div>
     </div>
 </div>
