@@ -1,7 +1,7 @@
 @import "../Terso/style.css";
 @import "../Terso-Child/this_site_style.css";
 /* 
-Theme Name:  Oral Surgery Specialistsof Atlanta
+Theme Name:  Oral Surgery
 Theme URI: http://www.NUVOLUM.com/
 Author: themeva
 Version: 1.0
@@ -34,7 +34,7 @@ Tags: dark, light, white, black, gray, one-column, two-columns, left-sidebar, ri
 .page-template-testimonial_landing_page-php .content-wrap .skinset-main {
   margin-left:18px!important;
   margin-right:15px!important;
-  max-width: 948px;
+
 }
 /* Align bredcrub text */
 .page-child .intro-text {
@@ -56,6 +56,9 @@ Tags: dark, light, white, black, gray, one-column, two-columns, left-sidebar, ri
 
 /* Makes Headers Better */
 .intro-text {background-color: RGBA(249, 249, 249, .5) !important; text-align: center;}
+
+/* remove top line everywhere */
+.skinset-background #primary-wrapper .skinset-header.nv-skin {border-top: 0px solid #38c6f4;}
 
 /* ------------------------------------
 :: 3. Quote 
