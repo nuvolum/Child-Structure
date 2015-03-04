@@ -1,7 +1,7 @@
 @import "../Terso/style.css";
 @import "../Terso-Child/this_site_style.css";
 /* 
-Theme Name:  Oral Surgery
+Theme Name: Oral Surgery
 Theme URI: http://www.NUVOLUM.com/
 Author: themeva
 Version: 1.0
@@ -30,10 +30,10 @@ Tags: dark, light, white, black, gray, one-column, two-columns, left-sidebar, ri
 :: 1. Pages Alignment
 ------------------------------------ */
 .page-template-landing_page-php .page ,  
-.page-template-youtube_landing_page-php .page , 
 .page-template-testimonial_landing_page-php .content-wrap .skinset-main {
-  margin-left:18px!important;
-  margin-right:15px!important;
+ margin-left:18px;
+  margin-right:15px;
+  max-width: 948px;
 
 }
 /* Align bredcrub text */
@@ -43,22 +43,22 @@ Tags: dark, light, white, black, gray, one-column, two-columns, left-sidebar, ri
 .centertxt {text-align:center!important;}
 .widget_nav_menu li {background:transparent;}
 .widget_nav_menu ul {background:transparent;}
-.wrapper{margin-top:0px;} /* remove top line on every page */
+.wrapper{margin-top:-18px;} /* remove top line on every page */
 
 #primary-wrapper .skinset-header.nv-skin, #primary-wrapper .skinset-footer.nv-skin, #primary-wrapper .skinset-main.nv-skin {border-bottom: 5px solid transparent !important;} /* Remove odd Lines that show up in terso */
 
 /* About The Phone Numbers At The Top */
 .phoney{margin-left:800px;margin-top:21px;font-size:22px;color:#007668;}
-
+.hidey{visibility:hidden;}
 
 /* Hide Breadcrumb on homepage */
 .home #breadcrumbs {display: none;}
 
+/* Make top border on active tab / Need to move this into main codebase  */
+.skinset-background .accordionhead.ui-accordion-content-active, .skinset-background .ui-state-active, .skinset-background #primary-wrapper.nv-dark .ui-state-active, .skinset-background #nv-tabs ul li ul, #primary-wrapper .skinset-background.sub-menu, .skinset-background span.menu-highlight, .skinset-background #primary-wrapper .skinset-header.nv-skin, .skinset-background div.item-list-tabs ul li.selected, .skinset-background div.item-list-tabs ul li.current, .skinset-background div.item-list-tabs ul li a.show-hide-new, .skinset-background div.item-list-tabs ul li a.new-reply-link, .skinset-background #topic-post-list, .skinset-background table.forum, .skinset-background .bbp-topics, .skinset-background .bbp-replies, .skinset-background .bbp-forums, .skinset-background ul#activity-stream {border-top-width: 1px;} 
+
 /* Makes Headers Better */
 .intro-text {background-color: RGBA(249, 249, 249, .5) !important; text-align: center;}
-
-/* remove top line everywhere */
-.skinset-background #primary-wrapper .skinset-header.nv-skin {border-top: 0px solid #38c6f4;}
 
 /* ------------------------------------
 :: 3. Quote 
@@ -106,10 +106,19 @@ h3 { font-weight: 400; line-height: 1; font-size: 20px; position: relative; marg
   background: url(/wp-content/themes/Terso-Child/img/YouTube-icon-dark.png) no-repeat center center;
 }
 
-embed { margin-top: -28px; display: block;}
+embed { 
+	margin-top: -28px; 
+	margin-bottom:28px; 
+	display: block; 
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
 
 
-.page-template-testimonial_landing_page-php .block.columns, .hozbreak, 
+ .hozbreak, 
 .page-template-testimonial_landing_page-php hr, 
 .page-template-testimonial_landing_page-php .tooltip-info, 
 .page-template-testimonial_landing_page-php .container.none, 
@@ -127,6 +136,7 @@ embed { margin-top: -28px; display: block;}
 /* ------------------------------------
 :: 5. Forms
 ------------------------------------ */
+#gform_submit_button_1 input[type="submit"]:hover, input[type="button"]:hover, #primary-wrapper input[type="button"], #primary-wrapper button, #primary-wrapper submit, #primary-wrapper input[type="submit"], a.button, button.button, input.button, #review_form #submit {background-color: #00c1a5 !important;display:block;}
 
 ul.gfield_checkbox li {
 width: auto !important;
@@ -140,8 +150,7 @@ zoom: 1;}
 :: 5. Mobile
 ------------------------------------ */
 @media only screen and (max-width:1010px) { 
-.wrapper{margin-top:90px;} /* remove top line on every page */
-.widget_nav_menu , .testimonialblock_menu {display:none !important;} /* Hide the nav when in mobile mode */
+.widget_nav_menu {display:none !important;} /* Hide the nav when in mobile mode */
 h1{font-size:16px !important;} /* Makes title not wrap on mobile */
 
 /* About The Phone Numbers At The Top */
@@ -159,20 +168,13 @@ h1{font-size:16px !important;} /* Makes title not wrap on mobile */
 .shadow-wrap {display: none;} /* I cant get the shadows looking right in mobile so I am just going to remove them for now.  I will come back to this */
 
 #breadcrumbs {display: none;} /* Remove breadcrubs from all mobile pages */
-/* Remove space under logo all mobile pages */
-.skinset-header.nv-skin{margin-bottom:-160px !important;}
-/* Shift Nav Custom Colors */
-.shiftnav.shiftnav-skin-light ul.shiftnav-menu li.menu-item.current-menu-item > .shiftnav-target, .shiftnav.shiftnav-skin-light ul.shiftnav-menu > li.shiftnav-sub-accordion.current-menu-ancestor > .shiftnav-target, .shiftnav.shiftnav-skin-light ul.shiftnav-menu > li.shiftnav-sub-shift.current-menu-ancestor > .shiftnav-target, .shiftnav.shiftnav-skin-light ul.shiftnav-menu li.menu-item ul.sub-menu .current-menu-item .shiftnav-target {
-color: #ffffff;
-background: #7bbd31;}
-/* Shift Nav custom colors - Active Background */
-.shiftnav-target{background:#eaeaea;} /* Shift Nav custom colors - Grey Background */
-.shiftnav.shiftnav-skin-light ul.shiftnav-menu li.menu-item.shiftnav-active > .shiftnav-target, .shiftnav.shiftnav-skin-light ul.shiftnav-menu li.menu-item.shiftnav-in-transition > .shiftnav-target {
-color: #ffffff;
-background: #7bbd31;
-border-top-color: transparent;
-border-bottom-color: transparent;}
-/* Shift Nav custom colors - target Background */
 
+.testimonialblock_menu {display: none;} /* Hide Procedures Menu On Testimonial */
+
+.entry-content-page .row {margin: 0 -3px !important;} /* This fix removes the odd side scoll that shows up on some pages */
+/* Fix shiftnav on andrio based phones */
+.shiftnav {width: 250px;}
+.shiftnav-open .shiftnav-wrap {left: -20px;}
+.shiftnav-open.shiftnav-open-left #shiftnav-toggle-main, .shiftnav-open.shiftnav-open-left .shiftnav-wrap {left: -40px;}
 
 }/* End Mobile */

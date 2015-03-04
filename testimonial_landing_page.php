@@ -56,12 +56,7 @@ include('key_site_parts/testimonial_block.php');
             <div class="clear"></div>
         </section><!-- /entry -->  
 
-        <footer class="row">
-        	<section class="twelve columns">
-				<?php edit_post_link(__('Edit this entry.', 'themeva' ), '<p>', '</p>'); ?>
-                <?php if( of_get_option('pagecomments')=='enable' ) comments_template(); // Enable this line for comments on pages ?> 
-			</section>
-        </footer>
+
     </article>
         
 <?php get_footer(); ?>

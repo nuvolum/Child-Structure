@@ -1,5 +1,5 @@
 <!-- Start Quote/Menu  -->
-<div class="vc_row wpb_row row testimonialblock ">
+<div class="vc_row wpb_row testimonialblock ">
     <div class="columns nine wpb_column vc_column_container">
         <div class="wpb_wrapper">
             <div class="wpb_raw_code wpb_content_element wpb_raw_html">
@@ -42,7 +42,9 @@
             <div class="vc_wp_custommenu wpb_content_element">
                 <div class="widget widget_nav_menu">
                     <?php wp_nav_menu( array('menu' => 'Patient Stories' )); ?>
+                    <div class="hozbreak clearfix">&nbsp;</div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -63,7 +65,8 @@
        <!-- Display the related videos only they we have one selected -->
        <?php if(get_field('related_image_1')) { ?>
 
-        <div class="vc_row wpb_row vc_inner row ">
+        <div class="vc_row wpb_row vc_inner ">
+        
             <div class="columns four wpb_column vc_column_container">
                 <div class="wpb_wrapper">
                     <div class="nv-skin mediawrap shadowreflection">
@@ -138,10 +141,12 @@
                     </div>
                 </div>
             </div>
+           
+          </div> 
           <?php } else { ?>
    			<!-- do nothing  -->
           <?php }; ?>
-        </div>
+        
     </div>
 </div>
 <!-- End Related People -->
