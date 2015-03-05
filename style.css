@@ -136,8 +136,6 @@ embed {
 /* ------------------------------------
 :: 5. Forms
 ------------------------------------ */
-#gform_submit_button_1 input[type="submit"]:hover, input[type="button"]:hover, #primary-wrapper input[type="button"], #primary-wrapper button, #primary-wrapper submit, #primary-wrapper input[type="submit"], a.button, button.button, input.button, #review_form #submit {background-color: #00c1a5 !important;display:block;}
-
 ul.gfield_checkbox li {
 width: auto !important;
 float: none !important;
@@ -147,7 +145,7 @@ display: inline-block;
 zoom: 1;}
 
 /* ------------------------------------
-:: 5. Mobile
+:: 6. Mobile
 ------------------------------------ */
 @media only screen and (max-width:1010px) { 
 .widget_nav_menu {display:none !important;} /* Hide the nav when in mobile mode */
@@ -172,7 +170,8 @@ h1{font-size:16px !important;} /* Makes title not wrap on mobile */
 .testimonialblock_menu {display: none;} /* Hide Procedures Menu On Testimonial */
 
 .entry-content-page .row {margin: 0 -3px !important;} /* This fix removes the odd side scoll that shows up on some pages */
-/* Fix shiftnav on andrio based phones */
+
+/* Fix shiftnav on andrio based phones */
 .shiftnav {width: 250px;}
 .shiftnav-open .shiftnav-wrap {left: -20px;}
 .shiftnav-open.shiftnav-open-left #shiftnav-toggle-main, .shiftnav-open.shiftnav-open-left .shiftnav-wrap {left: -40px;}
